@@ -714,7 +714,7 @@
  * Override with M92
  *                                      X, Y, Z, E0 [, E1[, E2...]]
  */
-#define DEFAULT_AXIS_STEPS_PER_UNIT   { 80, 80, 400, 103 }
+#define DEFAULT_AXIS_STEPS_PER_UNIT   { 80, 80, 400, 377 }
 
 /**
  * Default Max Feed Rate (mm/s)
@@ -917,7 +917,7 @@
  *
  * Specify a Probe position as { X, Y, Z }
  */
-#define NOZZLE_TO_PROBE_OFFSET { -43, -13, -1.25 }
+#define NOZZLE_TO_PROBE_OFFSET { -43, -13, -4.11 }
 
 // Certain types of probes need to stay away from edges
 #define MIN_PROBE_EDGE 30
@@ -1023,7 +1023,7 @@
 // @section extruder
 
 // For direct drive extruder v9 set to true, for geared extruder set to false.
-#define INVERT_E0_DIR true
+#define INVERT_E0_DIR false
 #define INVERT_E1_DIR false
 #define INVERT_E2_DIR false
 #define INVERT_E3_DIR false
